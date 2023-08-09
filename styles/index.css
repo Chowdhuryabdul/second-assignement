@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* shared css styles */
+:root{
+    --primary-color:#FF42A5;
+    --secondary-color: #0B0223;
+    --third-color:#534C64;
+    --fourth-color:
+    --primary-font-size: 1.125rem;
+    --secondary-font-size:3rem;
+}
+
+
+/* header  */
+   header{
+     
+   }
+/* nav  */
+
+   .first-column{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   }
+   .first-column img{
+    width: 86.041px;
+    height: 40px;
+   }
+   .first-column-title{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+   }
+
+   nav{
+    /* max-width: 1900px;
+     margin: 0 auto; */
+     padding: 50px 240px;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    
+   }
+
+   li a{
+    text-decoration: none;
+    color:#3C354F;
+   }
+
+   li>div{
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding: 18px 22px;
+
+   }
+/* banner */
+
+.banner{
+    display: flex;
+    
+    
+}
+
+.banner-column-1{
+    background-image: url('../images/Group\ 14.png');
+    width: 901px;
+    background-repeat: no-repeat;
+    margin-right: 68px;
+    padding: 150px 0 150px 240px;
+}
+
+.banner-title{
+    font-size: var(--secondary-font-size);
+    color: var(--secondary-color);
+    font-weight: 600px;
+    margin-bottom: 0;
+}
+
+.goat{
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-top: 5px;
+}
+
+.banner-info{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.btn-1{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border: 0;
+    padding: 20px 40px;
+    border-radius: 48px;
+}
+
+.btn-2{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #4EC5F7;
+    border: 0;
+    padding: 20px 40px;
+    border-radius: 48px;
+}
+
+.banner-column-2{
+    padding-right: 240px;
+}
+
+
+
+/* main section */
+
+/* section - 1 */
+
+
+/* section - 2 */
+/* section - 3 */
+/* section - 4 */
+/* section - 5 */
+/* section - 6 */
+
+/* footer section */
+
+
+
+
+
+/* Responsive css styles */
+
+/* For mobile and small scree  */
+
+
+/* for tablet or medium screen  */
