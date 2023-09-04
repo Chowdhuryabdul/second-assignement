@@ -18,21 +18,9 @@ body {
 .section-title {
     font-size: var(--secondary-font-size);
     font-weight: 700;
-    
     margin-bottom: 0;
 }
-
-/* .section-title-1{
-    font-size: var(--secondary-font-size);
-    font-weight: 700;
-    color: var(--secondary-color);
-} */
-
-.black-part {
-    color: var(--secondary-color);
-}
-
-.mixed-part{
+.mixed-part {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -83,7 +71,6 @@ nav ul {
     list-style: none;
     gap: 30px;
     align-items: center;
-
 }
 
 li a {
@@ -95,38 +82,40 @@ li>div {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 18px 22px;
-
 }
 
 /* banner */
 
-.banner {
-    display: flex;
+.banner {   
+    display: flex;   
+    align-items: center;
 }
 
-.banner-column-1 {
+.banner-column-1{
     background-image: url('../images/Group\ 14.png');
-    width: 901px;
     background-repeat: no-repeat;
-    margin-right: 68px;
-    padding: 150px 0 150px 240px;
+    background-size: cover;
+    padding: 100px 240px 100px 240px;
+    margin-right: 150px;
+    /* width: 50%; */
 }
+    
 
 .banner-title {
     font-size: var(--secondary-font-size);
     color: var(--secondary-color);
     font-weight: 600px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .goat {
-    font-size: 95px;
+    font-size: 6rem;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .banner-info {
@@ -155,10 +144,12 @@ li>div {
 }
 
 .banner-column-2 {
-    padding-right: 100px;
-    width: 700px;
+    padding-right: 240px;
 }
-
+.banner-column-2 img{
+    width: 100%;  
+    background-size: cover;  
+}
 
 
 /* main section */
@@ -169,12 +160,21 @@ li>div {
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
+    padding: 0 240px;   
+}
+
+.section-1 .section-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-1-contents {
     text-align: right;
-    padding-right: 100px;
+    padding-left: 240px;
+      
 }
 
 .section-1-btn {
@@ -192,6 +192,12 @@ li>div {
     color: var(--third-color);
     font-size: 24px;
     font-weight: 500;
+
+}
+
+.section-1 img{
+    width: 100%;
+  
 }
 
 /* section - 2 */
@@ -208,13 +214,13 @@ li>div {
     margin-bottom: 50px;
 }
 
-.play-btn{
+.play-btn {
     position: relative;
     top: -45%;
     left: 50%;
-
 }
-.play-btn-paragraph{
+
+.play-btn-paragraph {
     color: var(--primary-color);
     font-size: var(--primary-font-size);
     font-weight: 600;
@@ -251,7 +257,6 @@ li>div {
     display: flex;
     align-items: center;
     padding: 0 240px;
-
 }
 
 .section-4-contents {
@@ -270,9 +275,8 @@ li>div {
 .section-5 {
     display: flex;
     background-color: var(--primary-color);
-    height: 800px;
+    /* height: 800px; */
     align-items: center;
-
 }
 
 .section-5-column-1 {
@@ -313,111 +317,107 @@ li>div {
 /* section - 6 */
 .section-6 {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    height: 400px;
-    padding-top: 200px;
-
+    
+    
 }
+
 .section-6-column-1{
-    display: flex;
-    justify-content: space-around;
-    padding: 0 250px;
-    margin-bottom: 50px;
-    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px 240px;
     
 }
-.section-6-column-2{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 390px;
+ 
+#gm{
+   margin-top: 20px;
+}
     
+
+
+.game {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 50px;
+    background: #FFF;
+    padding: 10px;
 }
 
-
-.game{
+#static {
     display: flex;
     align-items: center;
     gap: 20px;
     border-radius: 50px;
-background: #FFF;
-padding: 10px;
+    background: #FFF;
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px;
 }
 
-#static{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-radius: 50px;
-background: #FFF;
-border: 3px solid var(--primary-color);
-color: var(--primary-color);
-padding: 10px;
-}
-
-.game:hover{
+.game:hover {
     border: 4px solid navy;
 }
 
 /* footer section */
 
-footer{
+footer {
     background-color: #0B0223;
 }
 
-footer header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0;
+footer header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
-footer header img{
+footer header img {
     width: 86.041px;
     height: 40px;
     margin-right: 20px;
 }
 
-footer header h5{
-        font-size: 45px;
-        font-weight: 700;
-        color: #FFF;
+footer header h5 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
 }
 
 footer ul {
     display: flex;
     justify-content: center;
     margin-top: 0px;
-    gap:60px;
-    
+    gap: 60px;
     list-style: none;
 }
 
-footer ul li a{
+footer ul li a {
     color: #FFF;
 }
 
 .company ul li {
     text-align: center;
-margin-top: 10px;
-height: 40px;
-margin-bottom:20px;
+    margin-top: 10px;
+    height: 40px;
+    margin-bottom: 20px;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     justify-content: center;
     gap: 60px;
 }
 
-.footer-section-paragraph{
+.footer-section-paragraph {
     font-size: var(--primary-font-size);
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.60);;
+    color: rgba(255, 255, 255, 0.60);
 }
 
-.copy-rights{
+.copy-rights {
     text-align: center;
     margin-top: 0;
-   padding-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 
@@ -425,6 +425,19 @@ margin-bottom:20px;
 /* Responsive css styles */
 
 /* For mobile and small scree  */
+  
+    @media screen and (max-width: 678px) {
+        nav, nav>ul, .banner, .section-1{
+            flex-direction: column;
+        }
+        .banner-column-1{
+            width: 100%;
+            margin-right: 0;
+        }
+        .banner-column-2 img{
+            width: 100%;
+        }
+    }
 
 
-/* for tablet or medium screen  */
+   
